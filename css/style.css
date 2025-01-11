@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+  position: relative;
+  background-image: url(../assets/soccer-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ball {
+  position: absolute;
+  height: 100px;
+  transition: 1s;
+  top: 0;
+  left: 0;
+}
+
+@keyframes kickedBall {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
